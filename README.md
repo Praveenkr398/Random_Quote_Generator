@@ -34,11 +34,11 @@ A simple, interactive web application that generates random quotes at the click 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/random-quote-generator.git
+   git clone https://github.com/Praveenkr398/Random_Quote_Generator
    ```
 2. Navigate to the project folder:
    ```bash
-   cd random-quote-generator
+   cd Random_Quote_Generator
    ```
 3. Open the `index.html` file in your browser to view the application.
 

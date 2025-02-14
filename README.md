@@ -1,5 +1,7 @@
 # Random_Quote_Generator
 
+view live: https://praveenkr398.github.io/Random_Quote_Generator/
+
 Here's a professional and engaging README for your Random Quote Generator project:
 
 ---

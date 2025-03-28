@@ -1,74 +1,30 @@
-# Random_Quote_Generator
+# 📝 Random Quote Generator  
 
-view live: https://praveenkr398.github.io/Random_Quote_Generator/
+🚀 A simple yet powerful **Random Quote Generator** built using **HTML, CSS, and JavaScript**. Get inspired with new quotes at the click of a button and share them instantly! 🌟  
 
-Here's a professional and engaging README for your Random Quote Generator project:
+## 🌟 Features  
+✔ **Get Random Quotes** – Click a button to generate a new quote instantly ✨  
+✔ **Author Display** – See who wrote the quote 📜  
+✔ **Text-to-Speech (TTS)** – Listen to the quote with a single click 🎤  
+✔ **Copy to Clipboard** – Quickly copy the quote for later use 📋  
+✔ **Tweet the Quote** – Instantly share the quote on Twitter with one click 🐦  
 
----
+## 📷 Preview  
+![Random Quote Generator Preview](https://github.com/user-attachments/assets/3a7e542d-179f-4f3e-a231-04ebc4050c3f)
 
-# Random Quote Generator
+## 🔗 Live Demo  
+👉 [Try it Here](https://praveenkr398.github.io/Random_Quote_Generator/)  
 
-A simple, interactive web application that generates random quotes at the click of a button. Built using **HTML**, **CSS**, and **JavaScript**, this project demonstrates the use of dynamic DOM manipulation, basic animations, and responsive design principles.
+## 🛠 Technologies Used  
+- HTML5  
+- CSS3  
+- JavaScript  
 
-## Features
+## 📂 Project Repository  
+🔗 [GitHub Repository](https://github.com/Praveenkr398/Random_Quote_Generator)  
 
-- 🎲 **Random Quotes:** Displays a randomly selected quote each time the button is clicked.
-- 📋 **Copy to Clipboard:** Easily copy quotes for sharing or saving.
-- 🎨 **Responsive Design:** Fully optimized for desktop, tablet, and mobile devices.
-- 💡 **Dynamic Styling:** Smooth animations and transitions for an enhanced user experience.
+## 📩 Contact  
+For any queries, suggestions, or collaborations, connect with me:  
+🔗 [LinkedIn](https://www.linkedin.com/in/Praveenkr398)  
 
-
-
-## Technologies Used
-
-- **HTML:** For structuring the application.
-- **CSS:** For styling and animations.
-- **JavaScript:** For logic, quote fetching, and interactivity.
-
-## How It Works
-
-1. A collection of quotes is stored in an array or fetched from an API.
-2. When the user clicks the "Generate Quote" button, JavaScript randomly selects a quote from the array or API response.
-3. The selected quote is displayed in the UI, with smooth animations enhancing the user experience.
-4. Users can copy the displayed quote with a single click.
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Praveenkr398/Random_Quote_Generator
-   ```
-2. Navigate to the project folder:
-   ```bash
-   cd Random_Quote_Generator
-   ```
-3. Open the `index.html` file in your browser to view the application.
-
-## Usage
-
-- Click the "Generate Quote" button to display a new random quote.
-- Use the "Copy" button (if implemented) to copy the quote to your clipboard.
-
-## Project Structure
-
-```
-random-quote-generator/
-├── index.html        # Main HTML file
-├── styles.css        # Styling for the application
-├── script.js         # JavaScript for logic and interactivity
-└── README.md         # Project documentation
-```
-
-## Contributing
-
-Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository, make changes, and submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free to customize this template with your project's unique details, live links, or additional features! 🚀
-
-![image](https://github.com/user-attachments/assets/3a7e542d-179f-4f3e-a231-04ebc4050c3f)
+https://github.com/user-attachments/assets/3a7e542d-179f-4f3e-a231-04ebc4050c3f

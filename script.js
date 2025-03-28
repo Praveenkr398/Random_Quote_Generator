@@ -1,55 +1,58 @@
 let Quote = document.querySelector(".quote");
 let Btn = document.querySelector("button");
 let Author = document.querySelector(".author");
-let Sound = document.querySelector('.sound')
-let copy = document.querySelector('.copy')
-let twitter = document.querySelector('.twitter')
+let Sound = document.querySelector('.sound');
+let copy = document.querySelector('.copy');
+let twitter = document.querySelector('.twitter');
 
-// // get quote content
+// Get quote content
 function getQuote() {
   Btn.classList.add("loading");
   Btn.innerText = "loading...";
-  let url = "http://api.quotable.io/random";
+  let url = 'https://api.adviceslip.com/advice';
+
   fetch(url)
-    .then((result) => result.json())
-    .then((quote) => {
-      console.log(quote.author);
-      Quote.textContent = quote.content;
-      Author.textContent = `__by ${quote.author}`;
+    .then(response => response.json())
+    .then(data => {
+      Quote.textContent = data.slip.advice;
+      Author.textContent = "__by Unknown";
       Btn.innerText = "New Quote";
+      Btn.classList.remove("loading");
+    })
+    .catch(error => {
+      console.error("Error fetching quote", error);
+      Btn.innerText = "Try Again";
       Btn.classList.remove("loading");
     });
 }
-// getQuote() 
-// // make speech of quote
-function voice (){
-    let voice = new SpeechSynthesisUtterance()
-    voice.lang = 'hi-GB'
-    let content = Quote.textContent
-    let author = Author.textContent.slice(5)
-     voice.text = `according to ${author}, ${content}`
-  
-    speechSynthesis.speak(voice)
+
+// Make speech of quote
+function voice() {
+    let voice = new SpeechSynthesisUtterance();
+    voice.lang = 'hi-GB';
+    let content = Quote.textContent;
+    let author = Author.textContent.slice(5);
+    voice.text = `According to ${author}, ${content}`;
+    speechSynthesis.speak(voice);
 }
 
-// // copy quote to your clipboard
-function clipboard (){
-    let content = `${Quote.textContent} ${Author.textContent}`
-    let myCopy = navigator.clipboard.writeText(content)
-//     console.log('click',)
-    
+// Copy quote to clipboard
+function clipboard() {
+    let content = `${Quote.textContent} ${Author.textContent}`;
+    navigator.clipboard.writeText(content).then(() => {
+        alert("Quote copied to clipboard!");
+    });
 }
 
-// // sharing on twitter
+// Sharing on Twitter
 function sharequote() {
-    let post = `${Quote.textContent} ${Author.textContent}`
-  let url = `https:twitter.com/intent/tweet?url=${post}`
-  window.open(url, '_blank');
-};
+    let post = `${Quote.textContent} ${Author.textContent}`;
+    let url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(post)}`;
+    window.open(url, '_blank');
+}
 
 window.addEventListener("load", getQuote);
 Btn.addEventListener("click", getQuote);
-Sound.addEventListener('click',voice)
-copy.addEventListener('click',clipboard)
-twitter.addEventListener('click',sharequote)
-
+Sound.addEventListener('click', voice);
+copy.addEventListener('click', clipboard);
+twitter.addEventListener('click', sharequote);

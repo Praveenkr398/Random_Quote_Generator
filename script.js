@@ -1,7 +1,6 @@
 let Quote = document.querySelector(".quote");
 let Btn = document.querySelector("button");
 let Author = document.querySelector(".author");
-let url = "http://api.quotable.io/random";
 let Sound = document.querySelector('.sound')
 let copy = document.querySelector('.copy')
 let twitter = document.querySelector('.twitter')
@@ -10,6 +9,7 @@ let twitter = document.querySelector('.twitter')
 function getQuote() {
   Btn.classList.add("loading");
   Btn.innerText = "loading...";
+  let url = "http://api.quotable.io/random";
   fetch(url)
     .then((result) => result.json())
     .then((quote) => {

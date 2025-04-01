@@ -12,6 +12,8 @@
 ## 📷 Preview  
 ![Random Quote Generator Preview](https://github.com/user-attachments/assets/3a7e542d-179f-4f3e-a231-04ebc4050c3f)
 
+Category:- "Mini Project, HTML, CSS, JavaScript, Api"
+
 ## 🔗 Live Demo  
 👉 [Try it Here](https://praveenkr398.github.io/Random_Quote_Generator/)  
 
